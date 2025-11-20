@@ -68,7 +68,7 @@ export default function ServicesSection() {
   const [activeTab, setActiveTab] = useState("strategy");
   const activeData = tabs.find((t) => t.id === activeTab);
 
-  // Auto cycle every 3 seconds
+  // Auto cycle every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveTab((prev) => {

@@ -9,18 +9,23 @@ import GallerySection from '../components/football/GallerySection'
 import FinalCTA from '../components/football/FinalCTA'
 
 
+
+
 const FootballEvent = () => {
     return (
         <>
             <div className="bg-black h-18 w-full"></div>
+          
             <HeroSection />
             <OverviewSection />
-            <ChallengeBrief/>
-            <ProblemsPainPoints/>
-            <StrategySolution/>
-            <EventHighlights/>
-            <GallerySection/>
-            <FinalCTA/>
+            <ChallengeBrief />
+            <ProblemsPainPoints />
+            <StrategySolution />
+            <EventHighlights />
+            <GallerySection />
+            <FinalCTA />
+
+
         </>
     )
 }

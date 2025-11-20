@@ -19,3 +19,6 @@ body {
 .setFont-arupala {
   font-family: 'Arupala Grotesk Trial', sans-serif;
 }
+html, body {
+  overflow-x: hidden;
+}

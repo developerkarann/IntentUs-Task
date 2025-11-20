@@ -4,15 +4,14 @@ import { Link } from "react-router-dom";
 
 export default function ProjectsSections() {
   return (
-    <section className="w-full bg-black text-white flex flex-col items-center px-6 pb-20 pt-10">
+    <section className="w-full bg-black text-white flex flex-col items-center px-6 pb-40 pt-10 ">
       {/* Heading */}
       <h2 className="text-4xl md:text-5xl font-bold text-center leading-tight">
-        Our work does <span className="text-blue-400">all the talking</span>
+        Events That Set  <span className="text-blue-400">New Standards.</span>
       </h2>
 
-      <p className="text-gray-300 text-center max-w-2xl mt-4">
-        With each successful project, we let our work take center stage, telling
-        a story of our dedication and proficiency in every endeavor.
+      <p className="text-gray-300 text-center max-w-2xl text-lg mt-4">
+        Explore some of our favorite executions—from high-energy sports festivals to championship experiences.
       </p>
 
       {/* PROJECT CARD */}
@@ -20,9 +19,9 @@ export default function ProjectsSections() {
 
         {/* Background Image */}
         <img
-          src="https://framerusercontent.com/images/jHBudBkIJXyqgJpiuK8vLQZGrw.webp?scale-down-to=2048&width=2880&height=1444"
+          src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?q=80&w=1023&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="background"
-          className="w-full h-auto rounded-3xl object-cover transition duration-700 group-hover:scale-[1.02]"
+          className="w-full h-120 rounded-3xl object-cover transition duration-700 group-hover:scale-[1.02]"
         />
 
         {/* Screen Mockup */}
@@ -47,10 +46,10 @@ export default function ProjectsSections() {
         >
           {/* Left Block */}
           <div className="transition-all duration-500 group-hover:scale-[1.03]">
-            <h3 className="text-2xl font-semibold">Unthread Case Study</h3>
+            <h3 className="text-4xl font-bold"> Championship Football Cup — 2025 Edition</h3>
 
             <div className="flex gap-2 mt-2 text-xs text-gray-300 flex-wrap">
-              {["Dashboard", "UI/UX", "3D Video", "Branding", "Product Strategy"].map((tag) => (
+              {["Event Management", "Challenges", "Our Strategy", "Higlights", "Final CTA"].map((tag) => (
                 <span
                   key={tag}
                   className="
@@ -79,10 +78,10 @@ export default function ProjectsSections() {
                border border-amber-900
               hover:bg-black 
               hover:text-white
-
+               cursor-pointer
             "
             >
-              View Project
+              View Event
               <ArrowUpRight size={18} />
             </button>
           </Link>

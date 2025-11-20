@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ProjectPortfolio from './pages/ProjectPortfolio'
+import FootballEvent from './pages/FootballEvent'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/project' element={<ProjectPortfolio /> } />
+          <Route path='/project' element={<FootballEvent /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

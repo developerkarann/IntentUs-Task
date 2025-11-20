@@ -8,7 +8,7 @@ export default function ConnectSection() {
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="https://framerusercontent.com/assets/P1NASaWlMTda5v75xSgS2Sxv2M.mp4"
+        src="/fifa.mp4"
         autoPlay
         loop
         muted
@@ -22,9 +22,18 @@ export default function ConnectSection() {
       <div className="relative z-10 text-center text-white">
         <p className="text-lg md:text-xl text-gray-300">Powered by</p>
 
-        <h1 className="text-6xl font-bold mt-2 tracking-wide">
-          intent
-        </h1>
+        <div className="flex justify-center items-center gap-3">
+          <h1 className="text-5xl tracking-wide font-bold text-white bg-clip-text ">
+            NovaEvent
+          </h1>
+
+          {/* Rotating Football Logo */}
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg"
+            alt="football logo"
+            className="w-7 h-7 animate-spin-slow drop-shadow-[0_0_1px_#00ffcc]"
+          />
+        </div>
 
         <button
           className="

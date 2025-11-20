@@ -4,75 +4,71 @@ import { ArrowUpRight } from "lucide-react";
 export default function ServicesSection() {
   const tabs = [
     {
-      id: "branding",
-      label: "Branding",
-      image: "https://framerusercontent.com/images/JSdtGy8tZ8ZDRMhpYP5L89WLb2g.png?scale-down-to=512",
+      id: "strategy",
+      label: "Event Strategy & Concepts",
+      image:
+        "https://images.unsplash.com/photo-1561489396-888724a1543d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      desc:
+        "We architect high-impact event concepts build for scale, atmosphere, and unforgettable fan engagement.",
       points: [
-        "Brand Strategy",
-        "Visual Identity",
-        "Brand Guidelines",
-        "Packaging Design",
-        "Creative Direction"
+        "End-to-end event blueprinting",
+        "Story-driven event themes",
+        "Fan engagement strategy",
+        "Cross-team coordination planning",
+        "Experience-driven concepts",
       ],
     },
     {
-      id: "ux",
-      label: "UX & Insights",
-      image: "https://framerusercontent.com/images/dqqWzAJcpW5z01ylXDBfsSySA.png",
+      id: "logistics",
+      label: "Logistics & Operations",
+      image:
+        "https://images.unsplash.com/photo-1532635042-a6f6ad4745f9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      desc:
+        "Smart scheduling, resource allocation, and streamlined operational systems powered by football-level precision.",
       points: [
-        "Research & Insights",
-        "Journey Mapping",
-        "Persona Development",
-        "Usability Testing",
-        "Experience Audits"
+        "Resource & staffing management",
+        "Technical setup planning",
+        "Scheduling automation",
+        "Safety & flow mapping",
+        "On-ground execution tools",
       ],
     },
     {
-      id: "product",
-      label: "Product Strategy",
-      image: "https://framerusercontent.com/images/PdXkxZkW2t2VXmlnrUffmVC4eXw.webp?scale-down-to=512",
+      id: "media",
+      label: "Creative Media & Branding",
+      image:
+        "https://images.unsplash.com/photo-1612043071344-94c20c4c837e?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      desc:
+        "Visual experiences designed to energize crowds, teams, partners, and sponsors.",
       points: [
-        "Product Planning",
-        "Roadmapping",
-        "Feature Prioritization",
-        "Competitive Analysis",
-        "Market Positioning"
+        "Promo & hype visuals",
+        "Brand identity systems",
+        "Sponsor-ready creative kits",
+        "Match-day content packages",
+        "Motion graphics & highlight reels",
       ],
     },
     {
-      id: "uiux",
-      label: (
-        <span className="flex items-center gap-1">
-          UX/UI Design <ArrowUpRight size={14} />
-        </span>
-      ),
-      image: "https://framerusercontent.com/images/Df3eJVmNG3szZGYprFfSEoNfZw.png?scale-down-to=512",
+      id: "onsite",
+      label: "On-Site Management",
+      image:
+        "https://plus.unsplash.com/premium_photo-1664304619594-1b2bffeff5f2?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      desc:
+        "Professional on-ground coordination ensuring every moment happens exactly as planned.",
       points: [
-        "Design Systems",
-        "User Flows and Site Map",
-        "Micro Interactions & Animations",
-        "High-Fidelity Designs",
-        "Interactive Experiences"
-      ],
-    },
-    {
-      id: "frontend",
-      label: "Frontend Development",
-      image: "https://framerusercontent.com/images/B6vezQG6naa8XQHfaBM9sWQ1f3g.webp?scale-down-to=512",
-      points: [
-        "Pixel-perfect UI",
-        "Responsive Layouts",
-        "Performance Optimization",
-        "Reusable Components",
-        "Interactive Animations"
+        "Team & talent coordination",
+        "Security & gate flow",
+        "Match/event sequencing",
+        "Live cue & timing control",
+        "VIP & sponsor management",
       ],
     },
   ];
 
-  const [activeTab, setActiveTab] = useState("uiux");
+  const [activeTab, setActiveTab] = useState("strategy");
   const activeData = tabs.find((t) => t.id === activeTab);
 
-
+  // Auto cycle every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveTab((prev) => {
@@ -80,27 +76,29 @@ export default function ServicesSection() {
         const nextIndex = (currentIndex + 1) % tabs.length;
         return tabs[nextIndex].id;
       });
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
-
   return (
-    <section className="w-full bg-black text-white px-6 py-20">
+    <section className="w-full bg-black text-white px-6 py-24 relative overflow-hidden">
+      
+      {/* Stadium Gradient Ambience */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,155,255,0.15),transparent_60%)] z-0"></div>
+
       {/* Heading */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-          Services to help your
-          <br />
-          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">
-            projects drive success
+          Solutions{" "}
+          <span className="bg-gradient-to-r from-[#009dff] to-[#6edcff] bg-clip-text text-transparent">
+            Engineered for Impact.
           </span>
         </h2>
 
         <p className="text-gray-300 mt-3 max-w-xl">
-          We create impactful design solutions that elevate your brand and
-          achieve your business goals.
+          Purpose-built services crafted for the energy, precision, and scale of
+          modern sports and live events.
         </p>
 
         {/* Tabs */}
@@ -109,65 +107,67 @@ export default function ServicesSection() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`
-                px-6 py-2 rounded-full border border-white/30 transition-all duration-300
-                ${activeTab === tab.id
-                  ? " bg-white text-black shadow-[0_0_20px_rgba(255,255,255,0.3)] scale-105 "
-                  : "bg-transparent text-white hover:bg-white/10"
-                }
-              `}
+              className={`px-6 py-2 rounded-full border transition-all duration-300 ${
+                activeTab === tab.id
+                  ? "bg-white text-black shadow-[0_0_25px_rgba(255,255,255,0.3)] scale-105"
+                  : "border-white/30 bg-transparent text-white hover:bg-white/10"
+              }`}
             >
               {tab.label}
             </button>
           ))}
         </div>
 
-        {/* Content Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-14 items-center">
+        {/* Main Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16 items-center">
 
-          {/* Left Image */}
+          {/* Left: Image */}
           <div className="transition-all duration-700">
             <img
               src={activeData.image}
               alt="service"
-              className="w-full rounded-2xl shadow-xl"
+              className="w-full h-[370px] object-cover rounded-xl shadow-[0_0_40px_rgba(0,155,255,0.15)]"
             />
           </div>
 
-          {/* Right Details */}
-          <div className="text-gray-300 transition-all duration-700">
-            <p className="max-w-md leading-relaxed">
-              We design user interfaces that are intuitive, aesthetically
-              pleasing, and accessible to all users.
+          {/* Right: Text */}
+          <div className="transition-all duration-700">
+            <p className="max-w-md leading-relaxed text-gray-300 mb-6">
+              {activeData.desc}
             </p>
 
-            <ul className="mt-6 space-y-4">
+            <ul className="space-y-4">
               {activeData.points.map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <span className="text-blue-400 text-lg">•</span>
-                  <span className="text-white font-semibold">{point}</span>
+                  <span className="text-[#00c6ff] text-lg">•</span>
+                  <span className="text-white font-medium">{point}</span>
                 </li>
               ))}
             </ul>
           </div>
-
         </div>
       </div>
 
-      {/* 🎥 Background Video */}
-      <section className="w-full h-9/12 bg-black flex items-center justify-center overflow-hidden">
-
-        {/* VIDEO */}
+      {/* ⚽ Ambient Stadium Video Section */}
+      {/* <section className="w-full h-96 mt-20 bg-black flex items-center justify-center overflow-hidden relative">
         <video
           src="https://framerusercontent.com/assets/PDisQ2J0ZmiKIRslZ2qGcJu4U0.mp4"
           autoPlay
           loop
           muted
           playsInline
-          className="w-auto h-auto max-w-[80%] max-h-[80%] object-contain"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
 
-      </section>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+
+        <div className="relative z-10 text-center">
+          <h3 className="text-4xl font-bold mb-3">Events Designed to Perform.</h3>
+          <p className="text-gray-300">
+            From kick-off to closing — every detail is engineered for excellence.
+          </p>
+        </div>
+      </section> */}
     </section>
   );
 }

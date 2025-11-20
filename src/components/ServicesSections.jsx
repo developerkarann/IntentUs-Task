@@ -82,7 +82,7 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <section className="w-full bg-black text-white px-6 py-24 relative overflow-hidden">
+    <section className="w-full bg-black text-white px-6 py-24 relative overflow-hidden font-bold " style={{fontFamily: ' Arupala Grotesk Trial'}}>
       
       {/* Stadium Gradient Ambience */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,155,255,0.15),transparent_60%)] z-0"></div>

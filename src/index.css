@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/arupala-grotesk-trial');
+
+@font-face {
+  font-family: "Arupala Grotesk Trial";
+  src: url("https://fonts.cdnfonts.com/css/arupala-grotesk-trial.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* --- 3D Flip Card Fix Utilities --- */
 .perspective {
@@ -18,3 +27,5 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+

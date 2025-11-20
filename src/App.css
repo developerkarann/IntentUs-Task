@@ -1,10 +1,21 @@
 body {
   background: var(--token-b4d15e43-2093-4666-b576-5bdd0f89cc8f, rgb(4, 4, 4));
 }
+
 @keyframes spin-slow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
 .animate-spin-slow {
   animation: spin-slow 6s linear infinite;
+}
+
+.setFont-arupala {
+  font-family: 'Arupala Grotesk Trial', sans-serif;
 }

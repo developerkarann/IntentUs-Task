@@ -23,8 +23,8 @@ export default function ConnectSection() {
         <p className="text-lg md:text-xl text-gray-300">Powered by</p>
 
         <div className="flex justify-center items-center gap-3">
-          <h1 className="text-5xl tracking-wide font-bold text-white bg-clip-text ">
-            NovaEvent
+          <h1 style={{fontFamily: ' Arupala Grotesk Trial'}} className="text-5xl tracking-wide font-bold text-white bg-clip-text ">
+            NovaEvents
           </h1>
 
           {/* Rotating Football Logo */}

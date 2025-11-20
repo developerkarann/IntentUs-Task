@@ -6,7 +6,7 @@ export default function ProjectsSections() {
   return (
     <section className="w-full bg-black text-white flex flex-col items-center px-6 pb-40 pt-10 ">
       {/* Heading */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center leading-tight">
+      <h2 style={{fontFamily: ' Arupala Grotesk Trial'}} className="text-4xl md:text-5xl font-bold text-center leading-tight">
         Events That Set  <span className="text-blue-400">New Standards.</span>
       </h2>
 
@@ -25,13 +25,6 @@ export default function ProjectsSections() {
         />
 
         {/* Screen Mockup */}
-        <div className="absolute inset-0 flex items-center justify-center px-4">
-          <img
-            src="/project-screen.png"
-            alt="mockup"
-            className="w-[85%] rounded-2xl shadow-lg transition duration-700 group-hover:scale-[1.03]"
-          />
-        </div>
 
         {/* BOTTOM OVERLAY — FULLY ANIMATED */}
         <div
@@ -46,7 +39,7 @@ export default function ProjectsSections() {
         >
           {/* Left Block */}
           <div className="transition-all duration-500 group-hover:scale-[1.03]">
-            <h3 className="text-4xl font-bold"> Championship Football Cup — 2025 Edition</h3>
+            <h3 style={{fontFamily: ' Arupala Grotesk Trial'}} className="text-4xl font-bold"> Championship Football Cup — 2025 Edition</h3>
 
             <div className="flex gap-2 mt-2 text-xs text-gray-300 flex-wrap">
               {["Event Management", "Challenges", "Our Strategy", "Higlights", "Final CTA"].map((tag) => (

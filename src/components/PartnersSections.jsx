@@ -23,9 +23,9 @@ export default function PartnersSection() {
             {/* Background world map dots (you'll replace with your actual asset) */}
             <div className="absolute inset-0 opacity-20 bg-[url('/https://media.istockphoto.com/id/1203191150/vector/world-map-outline-illustration-as-image.webp?s=1024x1024&w=is&k=20&c=g9YoBHiIs3Vumcaud1acvZmzSFqRJHYSfTlQePh6lwI=')] bg-cover bg-center" />
 
-            <div className="relative z-10 flex flex-col items-center text-center px-4 font-[DM Sans]">
-                <h2 className="text-3xl md:text-5xl font-bold text-gray-200 mb-2">Trusted By</h2>
-                <h3 className="text-3xl md:text-5xl font-bold text-blue-300 mb-8">Teams, Brands & Innovators</h3>
+            <div className="relative z-10 flex flex-col items-center text-center px-4" >
+                <h2 style={{fontFamily: ' Arupala Grotesk Trial'}} className="text-3xl md:text-5xl font-bold text-gray-200 mb-2">Trusted By</h2>
+                <h3 style={{fontFamily: ' Arupala Grotesk Trial'}} className="text-3xl md:text-5xl font-bold text-blue-300 mb-8">Teams, Brands & Innovators</h3>
 
                 <button className="px-8 py-2 rounded-full text-lg font-medium transition-all border hover:bg-neutral-800 duration-400 cursor-pointer border-[rgb(227,132,99)] bg-[rgb(4,4,4)] backdrop-filter-none h-full will-change-auto origin-center opacity-100" >
                     View all 80+ Clients

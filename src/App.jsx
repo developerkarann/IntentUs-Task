@@ -3,7 +3,6 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ProjectPortfolio from './pages/ProjectPortfolio'
 import FootballEvent from './pages/FootballEvent'
 
 function App() {

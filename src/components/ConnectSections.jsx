@@ -24,7 +24,7 @@ export default function ConnectSection() {
 
         <div className="flex justify-center items-center gap-3">
           <h1 style={{fontFamily: ' Arupala Grotesk Trial'}} className="text-5xl tracking-wide font-bold text-white bg-clip-text ">
-            NovaEvents
+            Nevents
           </h1>
 
           {/* Rotating Football Logo */}

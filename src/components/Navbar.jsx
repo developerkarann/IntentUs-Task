@@ -9,7 +9,7 @@ const Navbar = () => {
                     {/* Title */}
                     <Link to='/'>
                         <h1 className="text-5xl tracking-wide font-bold text-white bg-clip-text ">
-                            NovaEvents
+                            Nevents
                         </h1>
                     </Link>
 

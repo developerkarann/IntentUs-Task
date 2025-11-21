@@ -66,7 +66,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex items-center justify-center gap-2 text-[#00c8ff] mb-4"
         >
-          <Sparkles className="w-5 h-5" />
+      
           <span className="text-sm uppercase tracking-wide">
             Futuristic Sports Experience
           </span>
@@ -79,7 +79,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.1 }}
           className="text-white text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-lg"
         >
-          Championship Football Cup — 2025 Edition
+          Championship Football Cup 2025 Edition
         </motion.h1>
 
         {/* Subtitle */}
